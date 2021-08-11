@@ -4,7 +4,7 @@ import pandas as pd
 from random import randrange
 
 
-# Ouvrir le fichier Excel et lire les infos
+# Read Excel file
 df = pd.read_excel (r'/Users/jefflemieux/Desktop/tirageAuSort/test.xlsx')
 
 # Create an empty list which will contain the tickets
@@ -19,4 +19,5 @@ for index, row in df.iterrows():
 # Select a random number in the range of the list size
 winner = randrange(len(tickets))
 
+# Print the winner's name
 print("The winner is: ", tickets[winner])
